@@ -1,0 +1,44 @@
+#cardTable {
+    background-color: green;
+    margin-bottom: 0px;
+    max-height: 500px;
+    border-style: solid;
+    border-width: 13px;
+    border-color: tan;
+}
+
+.card {
+    width: 80px;
+    height: 120px;
+    margin: 0px 0px 10px 10px;
+    background-color: rgb(102, 102, 0);
+}
+
+.card img {
+    width: 80px;
+    height: 120px;
+}
+
+#msg {
+    color: black;
+    width: 200px;
+    height: 150px;
+    margin-left: 100px;
+    font-size: 32pt;
+}
+
+.btn {
+    margin-bottom: 20px !important;
+    background-color: tan;
+    color: white;
+}
+
+.form-control {
+    width: 100px !important;
+    display: inline !important;
+    padding: 16px 12px 0px 0px !important;
+}
+
+.dealer {}
+
+.player {}

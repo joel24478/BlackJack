@@ -1,0 +1,118 @@
+<!doctype html>
+<!--
+  File:  /~jcruz/public_html/assignment_4.html
+  91.461 Assignment:  Creating Your First Web Page
+  Joel Cruz, UMass Lowell Computer Science, jcruz@student.uml.edu
+  Copyright (c) 2016 by Joel Cruz.  All rights reserved.  May be freely 
+    copied or excerpted for educational purposes with credit to the author.
+  updated by JC on March 1, 2016
+-->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/style2.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/blackjack.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    <!--Google fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
+    <!--tab picture-->
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32" />
+    <script type="text/javascript" src="assets/bootstrap/js/jquery.js"></script>
+    <script type="text/javascript" src="model/card.js"></script>
+    <script type="text/javascript" src="model/deck.js"></script>
+    <script type="text/javascript" src="model/table.js"></script>
+    <script type="text/javascript" src="model/player.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="controller/controller.js"></script>
+    <!--tab tittle-->
+    <title>Black Jack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="nav">
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <!--Class active keeps this the button highlighted-->
+            <li class="active"><a href="assignments.html">Assignments</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <header>
+        <div class="container">
+            <h1>Black Jack</h1>
+        </div>
+    </header>
+    <section>
+        <div class="container" id="cardTable">
+            Dealer's Cards:
+            <div id="dealers_score">
+                <!--Score holder for dealer-->
+            </div>
+            <div class="row">
+                <div class="dealer">
+                    <div class="col-sm-1 col-sm-offset-3">
+                        <div class="card" id="dealers_card1"></div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="card" id="dealers_card2"></div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="card" id="dealers_card3"></div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="card" id="dealers_card4"></div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="card" id="dealers_card5"></div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div id="msg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                Your Cards:
+                <div id="players_score">
+                    <!--Score holder for player-->
+                </div>
+                <div class="player">
+                    <div class="col-sm-1 col-sm-offset-3">
+                        <div class="card" id="players_card1"></div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="card" id="players_card2"></div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="card" id="players_card3"></div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="card" id="players_card4"></div>
+                    </div>
+                    <div class="col-sm-1">
+                        <div class="card" id="players_card5"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <button id="hit_btn" class="btn" onclick="hit()">Hit</button>
+                <button id="stay_btn" class="btn" onclick="stay()">Stay</button>
+                <input id="bet_input" class="form-control" type="text">
+                <button id="bet_btn" class="btn" onclick="bet()">Bet</button>
+            </div>
+        </div>
+    </section>
+    <div id="footer">
+        <p>
+            <a href="mailto:joel24478@gmail.com"><img src="assets/images/mail.png" alt="email"></a>
+            <a href="https://github.com/joel24478"><img src="assets/images/github.png" alt="github"></a>
+            <a href="https://www.linkedin.com/pub/joel-cruz/70/296/932"><img src="assets/images/linkedin.png" alt="linkedin"></a>
+        </p>
+        <p>Copyright © Joel Cruz</p>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>
